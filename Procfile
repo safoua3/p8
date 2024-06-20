@@ -1,2 +1,2 @@
-web: python dashboard.py
+web: python dash.py
 test: pytest
