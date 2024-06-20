@@ -1,2 +1,2 @@
-web: python dash.py
+web: gunicorn dash:app
 test: pytest
