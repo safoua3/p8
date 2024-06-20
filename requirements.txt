@@ -12,4 +12,4 @@ plotly
 scikit_learn
 lightgbm
 gunicorn==20.1.0
-Werkzeug==2.1.1
+Werkzeug>=2.2.2
