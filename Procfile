@@ -1,2 +1,1 @@
-web: gunicorn dash:app
-test: pytest
+web: streamlit run dash.py
