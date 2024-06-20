@@ -2,7 +2,6 @@ pytest
 joblib
 shap
 streamlit_shap
-pickle
 matplotlib.pyplot
 xplotter.insights
 Flask==2.2.5
