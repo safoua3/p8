@@ -13,10 +13,11 @@ import streamlit_shap as st_shap
 
 # Définir l'URL de votre API
 API_URL = "http://localhost:5002/predict"
-data=pd.read_csv('C:/Users/Lenovo/application_test.csv')
+#data=pd.read_csv('C:/Users/Lenovo/application_test.csv')
 model = pickle.load(open("model.pkl","rb"))
 # Charger les données clients
-clients = pd.read_csv('test_data.csv')
+#clients = pd.read_csv('test_data.csv')
+clients= pd.read_csv('test_data.csv', nrows=1000)
 
 ############################
 # Configuration de la page et définition de styles #
@@ -161,7 +162,8 @@ if __name__ == "__main__":
 # Récupération et affichage des informations du client #
     ########################################################
     #data_client=lecture_X_test_original()[lecture_X_test_original().sk_id_curr == client_id]
-    infos_client=data[data['SK_ID_CURR']==client_id]
+    #infos_client=data[data['SK_ID_CURR']==client_id]
+    infos_client=clients[clients['SK_ID_CURR']==client_id]
     
     col1, col2 = st.columns(2)
     with col1:
