@@ -13,7 +13,7 @@ import streamlit_shap as st_shap
 
 # Définir l'URL de votre API
 #API_URL = "http://localhost:5002/predict"
-API_URL ="https://saf-2c3b613dc247.herokuapp.com/"
+API_URL ="https://saf-2c3b613dc247.herokuapp.com/predict"
 
 #data=pd.read_csv('C:/Users/Lenovo/application_test.csv')
 model = pickle.load(open("model.pkl","rb"))
