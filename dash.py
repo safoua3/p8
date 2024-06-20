@@ -178,12 +178,12 @@ if __name__ == "__main__":
                     """, 
                     unsafe_allow_html=True)
             st.write("")
-            st.write(f"Genre : **{infos_client['CODE_GENDER'].values[0]}**")
+            #st.write(f"Genre : **{infos_client['CODE_GENDER'].values[0]}**")
             st.write(f"Aâge : **{(int(infos_client['DAYS_BIRTH'].values[0]/-365))}**")
-            st.write(f"Situation familiale : **{infos_client['NAME_FAMILY_STATUS'].values[0]}**")
+            #st.write(f"Situation familiale : **{infos_client['NAME_FAMILY_STATUS'].values[0]}**")
             st.write(f"Nombre des membres de la famille : **{infos_client['CNT_FAM_MEMBERS'].values[0]}**")
             st.write(f"Revenu total annuel : **{infos_client['AMT_INCOME_TOTAL'].values[0]} $**")
-            st.write(f"Type d'emploi : **{infos_client['NAME_INCOME_TYPE'].values[0]}**")
+            #st.write(f"Type d'emploi : **{infos_client['NAME_INCOME_TYPE'].values[0]}**")
             st.write(f"Type de pret demandé  : **{infos_client['NAME_CONTRACT_TYPE'].values[0]}**")
             st.write(f"Montant du pret demandé  : **{infos_client['AMT_CREDIT'].values[0]} $**")
     
