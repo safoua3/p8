@@ -13,6 +13,6 @@ seaborn
 plotly
 scikit_learn
 lightgbm
-gunicorn==20.1.0
+gunicorn==22.0.0
 Werkzeug>=2.2.2
 ipython
